@@ -1,0 +1,23 @@
+{
+	"name": "html-gulp-boilerplate",
+	"version": "1.0.0",
+	"main": "gulpfile.js",
+	"author": "Kerim Rahmanov",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.15.5",
+		"@babel/preset-env": "^7.15.6",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "7.1.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-terser": "^2.0.1",
+		"gulp-webp": "^4.0.1",
+		"reseter.css": "^2.0.0",
+		"sass": "^1.42.1"
+	}
+}

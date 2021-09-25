@@ -1,0 +1,51 @@
+// RESETER.CSS https://github.com/resetercss/reseter.css
+@import "node_modules/reseter.css/src/scss/reseter.scss";
+
+// MAIN INCLUDES
+@import "./base/helpers";
+@import "./base/variables";
+
+// MAIN STYLES
+html {
+	scroll-behavior: "smooth";
+}
+
+body {
+	background-color: $dark-color;
+	color: $light-color;
+	min-height: 400vh;
+}
+
+#scroll-to-top {
+	position: fixed;
+	cursor: pointer;
+	height: 0px;
+	width: 0px;
+	z-index: 10;
+	bottom: 10%;
+	padding: 0;
+	right: 7%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	background: none;
+	border: none;
+	transition: opacity ease 0.4s;
+
+	svg {
+		stroke: $light-color;
+		max-height: 50px;
+		max-width: 50px;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
