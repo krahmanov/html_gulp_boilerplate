@@ -1,6 +1,4 @@
-# Gulp boilerplate for rapid HTML/CSS/JS development
-
-tada Overview
+## Gulp boilerplate for rapid HTML/CSS/JS development
 
 ![header](./src/images/screenshoot.png?raw=true)
 
