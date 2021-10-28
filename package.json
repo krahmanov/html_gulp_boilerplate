@@ -4,20 +4,34 @@
 	"main": "gulpfile.js",
 	"author": "Kerim Rahmanov",
 	"license": "MIT",
+	"scripts": {
+		"html": "node-w3c-validator -f lint -evH -i app/**/*.html",
+		"dev": "gulp",
+		"build": "gulp build"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.15.5",
 		"@babel/preset-env": "^7.15.6",
+		"babel-loader": "^8.2.3",
+		"browser-sync": "^2.27.7",
+		"del": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-babel": "^8.0.0",
 		"gulp-clean-css": "^4.3.0",
+		"gulp-cli": "^2.3.0",
 		"gulp-concat": "^2.6.1",
-		"gulp-imagemin": "7.1.0",
+		"gulp-file-include": "^2.3.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-image": "^6.2.1",
+		"gulp-notify": "^4.0.0",
 		"gulp-sass": "^5.0.0",
 		"gulp-sourcemaps": "^3.0.0",
-		"gulp-terser": "^2.0.1",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-uglify-es": "^3.0.0",
 		"gulp-webp": "^4.0.1",
-		"reseter.css": "^2.0.0",
+		"node-w3c-validator": "^2.0.1",
 		"sass": "^1.42.1"
 	}
 }

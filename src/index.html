@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<title>HTML GULP BOILERPLATE</title>
-	</head>
-	<body>
-		<section class="hero">
-			<h1>HTML GULP BOILERPLATE</h1>
-			<picture>
-				<source srcset="assets/images/screenshoot.webp" type="image/webp" />
-				<img
-					class="image"
-					src="assets/images/screenshoot.png"
-					alt="some description"
-					loading="lazy"
-				/>
-			</picture>
-		</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>HTML GULP BOILERPLATE</title>
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    @include('partials/header.html')
+    <div class="container main-content">
+      <h1>HTML GULP BOILERPLATE</h1>
+      <img src="img/screenshoot.png" alt="Cover" />
+    </div>
+    @include('partials/footer.html')
 
-		<button id="scroll-to-top">
-			<svg>
-				<use xlink:href="assets/images/icons/sprite.svg#circle-top-arrow"></use>
-			</svg>
-		</button>
-
-		<script src="assets/js/main.min.js"></script>
-	</body>
+    <a href="#!" class="vanillatop"></a>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
