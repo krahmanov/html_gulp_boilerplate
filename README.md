@@ -13,24 +13,24 @@ To start working with this bundle:
 3. Start by using:
    - `npm run dev` - For development purposes
    - `npm run build` - For production purposes
+   - `npm run zip` - Creates zip archive
+   - `npm run svg` - Creates svg sprites
 
 #### It automates most of the routine tasks such as:
 
 - scss,
 - autoprefixes,
-- image optimization,
+- image/svg optimization, (PNG,JPG,JPEG optimization and conversion to WebP, SVG sprite)
+- fonts conversions (OTF,TTF to WOFF, WOFF2)
 - js optimization.
 
-It also comes with <b>reseter.css</b> and <b>vanillatop.js</b>. </br>
+It also comes with <b>reseter.css</b> and <b>bootstrap-grid</b>. </br>
 It can be extended in a simple way when project require some extra functionality provided by thirdparty packages.
 
-## :red_circle: Launch
+Fonts Conversion
 
-### Gulp Commands
-
-| name         | Description                       |
-| ------------ | --------------------------------- |
-| `gulp`       | Runs default task for development |
-| `gulp build` | Runs default task for production  |
+- create `fonts` directory inside `src`
+- copy fonts in `fonts`
+- restart gulp
 
 <br/>

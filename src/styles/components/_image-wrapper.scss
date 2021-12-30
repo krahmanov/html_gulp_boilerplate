@@ -1,0 +1,7 @@
+.image-wrapper {
+  min-height: 200px;
+
+  & img {
+    width: 100%;
+  }
+}

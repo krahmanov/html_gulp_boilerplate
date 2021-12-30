@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#111111" />
-    <title>HTML GULP BOILERPLATE</title>
-    <link rel="stylesheet" href="css/vendor.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+  @@include('html/head.html', { "title": "Home Page" })
   <body>
-    @include('partials/header.html')
-    <div class="container main-content">
-      <h1>HTML GULP BOILERPLATE</h1>
-      <img src="img/screenshoot.png" alt="Cover" />
-    </div>
-    @include('partials/footer.html')
-
-    <a href="#!" class="vanillatop"></a>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+    @@include('html/header.html', {})
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="offset-3 col-6 image-wrapper">
+            <img src="@img/screenshoot.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
   </body>
 </html>
