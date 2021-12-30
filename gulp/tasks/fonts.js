@@ -40,7 +40,7 @@ export const ttfToWoff = () => {
     .pipe(app.gulp.dest(`${app.path.build.fonts}`))
     .pipe(app.gulp.src(`${app.path.srcDir}/fonts/*.ttf`))
     .pipe(ttf2woff2())
-    .pipe(app.gulp.dest(`${app.path.build.fonts}`));
+    .pipe(app.gulp.dest(`${app.path.build.fonts}/fonts/`));
 };
 
 export const fontStyle = () => {
