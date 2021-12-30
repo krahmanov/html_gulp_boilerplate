@@ -3,3 +3,4 @@ dist
 src/fonts/*
 package-lock.json
 yarn.lock
+src/styles/utils/fonts.scss
